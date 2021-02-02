@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+  #song{
+    border: 5px solid blue;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  div{
+    border :5px solid gray;
+  }
+
+ol{
+  border-right:1px solid gray;
+  width:100px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1> WEB </h1>
+    <input id="nightday" type="button" value="night" onclick="
+    if(document.querySelector('#nightday').value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#nightday').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#nightday').value = 'night';
+    }
+    ">
+
+    <div id="song">
+      <ol>
+        <li><a href="1.html">html</a></li>
+        <li><a href="2.html">css</a></li>
+        <li><a href="3.html">Javascript</a></li>
+      </ol>
+      <div class="text">
+            In 1980, physicist Tim Berners-Lee, a contractor at <a href="1.html">CERN</a>, proposed and prototyped<br>
+        ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee<br>
+        wrote a memo proposing an Internet-based hypertext system.
+      </div>
+    </div>
+  </body>
+</html>
